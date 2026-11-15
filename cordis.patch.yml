@@ -1,0 +1,7 @@
+- insert:
+    - id: auto-review-translation
+      name: dsh-auto-review-translation
+      config:
+        provider: bing
+        targetLanguage: zh-CN
+        timeoutMs: 8000
