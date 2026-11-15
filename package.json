@@ -1,0 +1,40 @@
+{
+  "name": "dsh-auto-review-translation",
+  "version": "0.1.0",
+  "description": "Translate DeepSeek Harness automatic approval review reasons using the official translation service.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "translation",
+    "approval"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.3.0",
+    "dsh": "0.2.2-rc.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Erichan-0721/dsh-auto-review-translation.git"
+  }
+}
